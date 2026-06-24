@@ -1,6 +1,6 @@
 # Painel de Inteligência de Mercado – Performance Comercial
 
-![Dashboard Performance Comercial](./Painel de desempenho comercial)
+![Dashboard Performance Comercial](./dashboard_performance_comercial.png.jpg)
 
 ## 📌 Sobre o Projeto
 Este projeto consiste no desenvolvimento de um **Dashboard Executivo de Performance Comercial** utilizando a base de dados pública de e-commerce da **Olist**. O objetivo principal foi transformar dados brutos armazenados em um banco de dados relacional em insights estratégicos para a tomada de decisão da diretoria, focando em comportamento do consumidor, saúde financeira e distribuição geográfica.
