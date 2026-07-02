@@ -1,13 +1,23 @@
 # 📦 Solução de Inteligência de Mercado e Análise Logística: Case Olist
 
 ## 📌 Sobre o Projeto
-Este projeto consiste no desenvolvimento de uma solução completa de Inteligência de Mercado, Inteligência Logística e Análise de Dados, utilizando a base de dados pública de e-commerce da Olist. O objetivo principal foi transformar dados brutos armazenados em um banco de dados relacional em insights estratégicos para a tomada de decisão da diretoria, cobrindo desde a extração via SQL até a visualização executiva em duas visões complementares no Power BI: **Performance Comercial** e **Performance Logística**.
+Este projeto consiste no desenvolvimento de uma solução completa de Inteligência de Mercado, Inteligência Logística e Análise de Dados, utilizando a base de dados pública de e-commerce da Olist. O original objetivo principal foi transformar dados brutos armazenados em um banco de dados relacional em insights estratégicos para a tomada de decisão da diretoria, cobrindo desde a extração via SQL até a visualização executiva em duas visões complementares no Power BI: **Performance Comercial** e **Performance Logística**.
 
 O projeto foi construído do zero, passando pelas etapas de consultas estruturadas para cruzamentos de dados, modelagem de dados (Star Schema), criação de métricas de negócio com linguagem DAX e design de interface focado na experiência do usuário (UX).
 
 ---
 
-## 📊 1. Visão de Performance Comercial
+## 📊 Painéis Executivos (Visualização Rápida)
+
+### 1. Dashboard de Performance Comercial
+![Dashboard Comercial](./dashboard_performance_comercial.jpg)
+
+### 2. Dashboard de Performance Logística
+![Dashboard Logística](./Relatorio_Performance_Logistica.jpg)
+
+---
+
+## 📈 1. Detalhes da Visão Comercial
 
 Esta visão foca na saúde financeira do e-commerce, trazendo volumetria de vendas, faturamento e comportamento de categorias de produtos.
 
@@ -18,11 +28,9 @@ Esta visão foca na saúde financeira do e-commerce, trazendo volumetria de vend
 * **Concentração Geográfica:** Análise regional revelou que São Paulo (SP) liderou o faturamento de forma isolada, acompanhado por Rio de Janeiro (RJ) e Minas Gerais (MG).
 * **Curva ABC de Produtos (Top 5):** A categoria de Beleza & Saúde liderou o topo histórico de faturamento, seguida por Relógios & Presentes e Cama, Mesa & Banho.
 
-🖼️ *Visualização Comercial disponível no arquivo: `dashboard_performance_comercial.png`*
-
 ---
 
-## 🚚 2. Visão de Performance Logística (Novo)
+## 🚚 2. Detalhes da Visão Logística
 
 Esta visão foi desenvolvida especificamente para monitorar a eficiência de entrega por estado e identificar gargalos operacionais críticos que impactam o SLA e a jornada do cliente.
 
@@ -37,8 +45,6 @@ Para evitar a poluição visual, o painel adota uma abordagem de análise de ext
 * **Top 5 Estados com Maior Tempo de Entrega (Gargalos):** Identificação imediata das 5 regiões com pior SLA (lideradas por Roraima - RR, com 29 dias médios). Foco direto para renegociação de frete ou troca de operadores logísticos.
 * **Top 5 Estados Mais Rápidos na Entrega (Eficiência):** Mapeamento das regiões de alta performance logística (lideradas por Santa Catarina - SC, com 14,5 dias médios), servindo de benchmark para a operação.
 
-🖼️ *Visualização Logística disponível no arquivo: `Relatorio_Performance_Logistica.jpg`*
-
 ---
 
 ## 🛠️ Tecnologias e Competências Técnicas
@@ -50,16 +56,10 @@ Para evitar a poluição visual, o painel adota uma abordagem de análise de ext
 
 ---
 
-## 📁 Como Visualizar o Projeto
+## 📁 Como Analisar os Arquivos Técnicos
 
 * **Para analisar os scripts de extração e queries:** Consulte o arquivo `analise_inicial_olist.sql`
 * **Para interagir com os filtros e fórmulas DAX:** Faça o download do arquivo `.pbix` atualizado.
-
-### Painel de Performance Comercial:
-![Dashboard Comercial](./dashboard_performance_comercial.png)
-
-### Painel de Performance Logística:
-![Dashboard Logística](./Relatorio_Performance_Logistica.jpg)
 
 ---
 Developed by **André Luis da Silva Santos**
