@@ -205,4 +205,15 @@ CREATE DATABASE olist_analytics;
 3. Execute o script de automação SQL contido neste repositório via terminal (substituindo pelo seu usuário do banco) para criar as tabelas estruturadas, normalizar os campos e aplicar as regras de negócio:
 ```bash
 psql -U seu_usuario -d olist_analytics -f analise_inicial_olist.sql
+```
+
+---
+
+### 📊 Passo 2: Conexão e Atualização do Modelo no Power BI
+
+1. Certifique-se de que o arquivo SQL foi executado com sucesso e as tabelas estão povoadas.
+2. Baixe e abra o arquivo `dashboard_performance_comercial.pbix` contido neste repositório.
+3. No menu superior do Power BI Desktop, navegue até: **Página Inicial** -> **Transformar Dados** -> **Configurações da Fonte de Dados**.
+4. Altere as credenciais e a string de conexão para apontar para o seu servidor local e para o banco de dados `olist_analytics`.
+5. Clique em **"Atualizar"** para processar a carga via Power Query e reestabelecer o modelo dimensional Star Schema na memória.
 
