@@ -229,3 +229,23 @@ inteligencia-mercado-olist/
 ├── dashboard_performance_logistica.pbix # Painel operacional de monitoramento de SLA e volumetria de fretes
 ├── dashboard_performance_comercial.jpg # Evidência visual da interface de performance comercial
 └── Relatorio_Performance_Logistica.jpg # Evidência visual da interface de monitoramento logístico
+```
+---
+
+## 👤 Sobre o Autor
+
+Sou um **Analista de Dados** focado em transformar dados de mercado e operacionais em **insights estratégicos e acionáveis** para a tomada de decisão. 
+
+* ✅ **Business Intelligence** - Experiência em engenharia de BI com foco em modelagem dimensional Star Schema, desenvolvimento de métricas avançadas em DAX e aplicação de Data Storytelling.
+* ✅ **Engenharia e Manipulação de Dados** - Domínio em SQL para criação de consultas complexas, junções, funções de janela (Window Functions), tratamento de anomalias e otimização de cargas.
+* ✅ **Abordagem Data-Driven** - Perfil voltado para resultados de negócio, traduzindo métricas técnicas em relatórios executivos para suporte a tomadas de decisão da diretoria.
+
+🔗 **Vamos nos conectar e trocar experiências sobre dados:**
+- 💼 [LinkedIn](https://www.linkedin.com/in/andré-luis-santos-b3aa74325/)
+- 🐙 [GitHub](https://github.com/AndreLS-Analytics)
+
+---
+
+## 📝 Licença e Uso
+
+Este repositório é distribuído sob a licença MIT. Sinta-se totalmente livre para clonar, realizar forks, estudar a arquitetura do banco de dados ou utilizar os painéis como referência para as suas próprias soluções analíticas.
