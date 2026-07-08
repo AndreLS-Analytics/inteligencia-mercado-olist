@@ -186,23 +186,15 @@ Com base nos cenários diagnosticados, as seguintes ações estratégicas são r
 
 ## 🚀 Como Reproduzir
 
-### Pré-requisitos
-### Passo 1: Configurar o Banco de Dados
+### 📌 Pré-requisitos Técnicos
+- **SGBD:** PostgreSQL (Versão 12 ou superior) instalado localmente
+- **IDE/Ferramentas:** Power BI Desktop (atualizado) e um cliente SQL (pgAdmin, DBeaver ou terminal psql)
+- **Dataset:** Carga completa dos dados públicos do e-commerce da Olist (Disponível no Kaggle)
 
+---
+
+### 🗄️ Passo 1: Configurar e Popular o Banco de Dados
+
+1. Conecte-se ao seu servidor PostgreSQL e execute o comando abaixo para criar o banco analítico dedicado:
 ```sql
--- 1. Crie um banco de dados PostgreSQL
 CREATE DATABASE olist_analytics;
-
--- 2. Importe os CSVs brutos do e-commerce da Olist
-
--- 3. Execute o script SQL estruturado disponível neste repositório:
-psql -U seu_usuario -d olist_analytics -f analise_inicial_olist.sql
-```
-
-inteligencia-mercado-olist/
-├── README.md                           # Este arquivo de documentação
-├── analise_inicial_olist.sql           # Script SQL com as consultas estruturadas
-├── dashboard_performance_comercial.pbix # Modelo do dashboard comercial no Power BI
-├── dashboard_performance_logistica.pbix # Modelo do dashboard logístico no Power BI
-├── dashboard_performance_comercial.jpg # Captura de tela da visão comercial
-└── Relatorio_Performance_Logistica.jpg # Captura de tela da visão logística
