@@ -198,3 +198,11 @@ Com base nos cenários diagnosticados, as seguintes ações estratégicas são r
 1. Conecte-se ao seu servidor PostgreSQL e execute o comando abaixo para criar o banco analítico dedicado:
 ```sql
 CREATE DATABASE olist_analytics;
+```
+
+2. Realize o download dos arquivos brutos em formato `.csv` e certifique-se de salvá-los no diretório local do projeto.
+
+3. Execute o script de automação SQL contido neste repositório via terminal (substituindo pelo seu usuário do banco) para criar as tabelas estruturadas, normalizar os campos e aplicar as regras de negócio:
+```bash
+psql -U seu_usuario -d olist_analytics -f analise_inicial_olist.sql
+
