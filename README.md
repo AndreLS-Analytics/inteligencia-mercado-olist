@@ -217,3 +217,15 @@ psql -U seu_usuario -d olist_analytics -f analise_inicial_olist.sql
 4. Altere as credenciais e a string de conexão para apontar para o seu servidor local e para o banco de dados `olist_analytics`.
 5. Clique em **"Atualizar"** para processar a carga via Power Query e reestabelecer o modelo dimensional Star Schema na memória.
 
+---
+
+## 📁 Estrutura de Arquivos do Repositório
+
+```text
+inteligencia-mercado-olist/
+├── README.md                           # Documentação executiva e técnica do projeto
+├── analise_inicial_olist.sql           # Query estruturada de DDL, limpeza e views analíticas
+├── dashboard_performance_comercial.pbix # Modelo analítico de faturamento e comportamento comercial
+├── dashboard_performance_logistica.pbix # Painel operacional de monitoramento de SLA e volumetria de fretes
+├── dashboard_performance_comercial.jpg # Evidência visual da interface de performance comercial
+└── Relatorio_Performance_Logistica.jpg # Evidência visual da interface de monitoramento logístico
