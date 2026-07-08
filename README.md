@@ -25,6 +25,33 @@ A solução abrange:
 - **Visualização executiva** em Power BI com duas visões complementares: Performance Comercial e Performance Logística
 - **Data Storytelling** estruturado para suportar tomada de decisão estratégica
 
+
+## 📈 Resultados Estratégicos do Projeto (Geração de Valor)
+
+Este ecossistema analítico foi desenvolvido focado em duas vertentes principais para a tomada de decisão:
+
+* **Performance Comercial:** Identificação de gargalos de faturamento por categoria de produto, mapeamento do comportamento de compra dos clientes e análise de curvas de sazonalidade para direcionamento estratégico de campanhas de marketing.
+* **Otimização Logística:** Monitoramento detalhado do SLA de entrega e identificação das regiões com maior índice de atrasos crônicos, permitindo planos de ação voltados à renegociação de contratos de frete e melhoria do nível de serviço.
+
+---
+
+## 💡 Exemplo de Consulta Relevante (SQL)
+
+Para demonstrar a maturidade da estrutura de consultas contidas no script `analise_inicial_olist.sql`, destaca-se abaixo um exemplo de extração e agregação focada em receita e volume:
+
+```sql
+-- Análise de faturamento e ticket médio por categoria de produto
+SELECT 
+    p.product_category_name AS categoria,
+    COUNT(oi.order_item_id) AS total_vendas,
+    ROUND(SUM(oi.price)::numeric, 2) AS faturamento_total,
+    ROUND(AVG(oi.price)::numeric, 2) AS ticket_medio
+FROM olist_order_items_dataset oi
+JOIN olist_products_dataset p ON oi.product_id = p.id_do_produto_da_olist
+GROUP BY p.product_category_name
+ORDER BY faturamento_total DESC
+LIMIT 10;
+```
 ---
 
 ## ❓ Perguntas-Chave de Negócio Respondidas
@@ -209,10 +236,10 @@ psql -U seu_usuario -d olist_analytics -f analise_inicial_olist.sql
 
 ---
 
-### 📊 Passo 2: Conexão e Atualização do Modelo no Power BI
+### 📊 Passo 2: Conexão e Atualização dos Modelos no Power BI
 
 - 1️⃣ **Certifique-se** de que o arquivo SQL foi executado com sucesso e as tabelas estão povoadas.
-- 2️⃣ Baixe e abra o arquivo `dashboard_performance_comercial.pbix` contido neste repositório.
+- 2️⃣ Faça o download e abra o arquivo correspondente ao painel que deseja analisar: `dashboard_performance_comercial.pbix` ou `dashboard_performance_logistica.pbix`.
 - 3️⃣ No menu superior do Power BI Desktop, navegue até: **Página Inicial** -> **Transformar Dados** -> **Configurações da Fonte de Dados**.
 - 4️⃣ Altere as credenciais e a string de conexão para apontar para o seu servidor local e para o banco de dados `olist_analytics`.
 - 5️⃣ Clique em **"Atualizar"** para processar a carga via Power Query e reestabelecer o modelo dimensional Star Schema na memória.
@@ -234,7 +261,7 @@ inteligencia-mercado-olist/
 
 ## 👤 Sobre o Autor
 
-Sou um **Analista de Dados** focado em transformar dados de mercado e operacionais em **insights estratégicos e acionáveis** para a tomada de decisão. 
+Sou um **Analista de Dados** focado em transformar dados de mercado e operacionais em **insights estratégicos e acionáveis** para a tomadas de decisão.
 
 * ✅ **Business Intelligence** - Experiência em engenharia de BI com foco em modelagem dimensional Star Schema, desenvolvimento de métricas avançadas em DAX e aplicação de Data Storytelling.
 * ✅ **Engenharia e Manipulação de Dados** - Domínio em SQL para criação de consultas complexas, junções, funções de janela (Window Functions), tratamento de anomalias e otimização de cargas.
