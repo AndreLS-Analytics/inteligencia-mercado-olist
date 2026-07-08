@@ -187,18 +187,17 @@ Com base nos cenários diagnosticados, as seguintes ações estratégicas são r
 ## 🚀 Como Reproduzir
 
 ### Pré-requisitos
-- PostgreSQL instalado localmente
-- Power BI Desktop (versão recente)
-- Dataset Olist (disponível publicamente no Kaggle)
+### Passo 1: Configurar o Banco de Dados
 
-### Passo 1: Configurar Banco de Dados
 ```sql
 -- 1. Crie um banco de dados PostgreSQL
 CREATE DATABASE olist_analytics;
 
 -- 2. Importe os CSVs brutos do e-commerce da Olist
+
 -- 3. Execute o script SQL estruturado disponível neste repositório:
 psql -U seu_usuario -d olist_analytics -f analise_inicial_olist.sql
+```
 
 inteligencia-mercado-olist/
 ├── README.md                           # Este arquivo de documentação
