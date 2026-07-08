@@ -199,3 +199,41 @@ CREATE DATABASE olist_analytics;
 -- 2. Importe os CSVs brutos do e-commerce da Olist
 -- 3. Execute o script SQL estruturado disponível neste repositório:
 psql -U seu_usuario -d olist_analytics -f analise_inicial_olist.sql
+
+### Passo 2: Conectar Power BI
+1. Faça o download e abra o arquivo: dashboard_performance_comercial.pbix (ou visão logística)
+2. Vá em: Transformar Dados -> Configurações da Fonte de Dados
+3. Altere a string de conexão para apontar para o seu banco PostgreSQL local
+4. Clique em "Atualizar" para recarregar o modelo dimensional
+
+---
+
+## 📁 Estrutura de Arquivos
+
+inteligencia-mercado-olist/
+├── README.md                           # Este arquivo de documentação
+├── analise_inicial_olist.sql           # Script SQL com as consultas estruturadas
+├── dashboard_performance_comercial.pbix # Modelo do dashboard comercial no Power BI
+├── dashboard_performance_logistica.pbix # Modelo do dashboard logístico no Power BI
+├── dashboard_performance_comercial.jpg # Captura de tela da visão comercial
+└── Relatorio_Performance_Logistica.jpg # Captura de tela da visão logística
+
+---
+
+## 👤 Sobre o Autor
+
+Sou um **Analista de Dados** focado em transformar dados de mercado e operacionais em **insights estratégicos e acionáveis** para a tomada de decisão. 
+
+✅ **Business Intelligence** - Modelagem Star Schema, DAX avançado e Data Storytelling.  
+✅ **Manipulação de Bancos de Dados** - Extração avançada e tratamento estruturado via SQL.  
+✅ **Foco em Resultados (Data-Driven)** - Tradução de métricas complexas em planos de ação de negócios.  
+
+🔗 **Vamos nos conectar:**
+- 💼 [LinkedIn](https://www.linkedin.com/in/andré-luis-santos-b3aa74325/)
+- 🐙 [GitHub](https://github.com/AndreLS-Analytics)
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Sinta-se livre para clonar, estudar e utilizar em suas próprias análises.
